@@ -7,26 +7,35 @@
     <link rel="shortcut icon" href="..//imagens/favicon.ico" type="image/x-icon">
     <title>Modelo de Caixas</title>
     <style>
-        h1 {
+        h1 { /* Box-level */
+            
             background-color: lightgray;
+
             height: 300px;
-            width: 300px;
-            border-width: 10px;
-            border-style: solid;
-            border-color: darkgrey;
+            width: 300px;       
+
+            /*Shorthand - Border*/
+            border: 10px solid darkgray;
+
+            /*Shorthand - padding*/
+            padding: 10px;
             
-            /*padding: 10px;*/
-            padding-top: 10px;
-            padding-left: 10px;
-            padding-bottom: 10px;
-            padding-right: 10px;
+            /*margin: auto; (Centraliza horizontalmente)*/
             
+            /*Shorthand - Margin*/
+            margin: 20px auto 40px auto;
+            
+            /*Shorthand - outline*/
+            outline: 5px dashed salmon;
+
         }
 
-        a {
-            border-width: 10px;
-            border-style: solid;
-            border-color: red;
+        a { /* Inline-level */
+
+            display: block;
+            border: 10px solid red;
+            padding: 10px 10px 10px 10px;
+            
         }
     </style>
 </head>
