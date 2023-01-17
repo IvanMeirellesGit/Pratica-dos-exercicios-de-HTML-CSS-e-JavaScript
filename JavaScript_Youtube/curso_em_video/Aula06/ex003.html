@@ -20,11 +20,13 @@
     <h1>Olá, Mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        window.alert ('Minha primeira mensagem!') // Janela com um alerta
-        window.confirm ('Está gostando de JS?') // Janela com botão OK e Cancelar
-        window.prompt ('Qual é o seu nome?') // Janela com campo pra digitação.
-        /* Esta é a forma de fazer comentário 
-        em bloco.*/
+        var n1 = Number(window.prompt('Digite um número:')) // String
+        var n2 = Number(window.prompt('Digite outro número:')) // String
+        var soma = n1 + n2
+
+        window.alert('A soma desses numeros é: ' + String((soma))) // Concatenação
+        //(number + number) para adição
+        //(String + String) para concatenação
     </script>
 </body>
 </html>
