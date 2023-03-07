@@ -21,11 +21,11 @@
     <p>Já me livrei da maldição!</p>
     <script>
         var nome = window.prompt(`Qual seu nome?`) // Captura nome (String)
-        var n1 = Number(window.prompt('Digite um número:')) // String
-        var n2 = Number(window.prompt('Digite outro número:')) // String
+        var n1 = Number(window.prompt('Digite um número:')) // String convertida (Parceado) em Number
+        var n2 = Number(window.prompt('Digite outro número:')) // String convertida (Parceado) em Number
         var soma = n1 + n2
 
-        window.alert(nome + ', A soma desses numeros é: ' + String((soma))) // Concatenação
+        window.alert(`${nome}, A some entre ${n1} e ${n2} é igual a ${soma}`) // Concatenação
         //(number + number) para adição
         //(String + String) para concatenação
     </script>
