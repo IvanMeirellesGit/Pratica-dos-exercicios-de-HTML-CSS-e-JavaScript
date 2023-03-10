@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background-color: rgb(170, 170, 231);
+            color : white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com o Dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim!</div>
+    <script>
+         /*Selecionando elemento (p) pelo TagName na posição [0] do index, ou seja, o primeiro parágrafo que aparece no DOM*/
+         /*Quando o elemento estiver no plural (Elements) o uso do index [] para saber qual elemento selecionar será usado*/
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]               
+        var corpo = document.body
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+        d.style.background = 'white'
+
+
+        /*Mostrando na tela com o innerText o texto dentro da tag capturada*/
+        window.document.writeln('Está escrito assim: ' + p1.innerText)
+        /*innerHTML pega as tags filhas dentro da tag capturada e exibe tambem*/
+        document.writeln(p2.innerHTML)                      
+        /*window.alert(p2.innerText)*/
+
+        /*Manipulando a cor do parágrafo usando a variavel capturada do DOM*/
+        p1.style.color = 'blue'
+        corpo.style.background = 'black'
+        /*d.style.background = 'green'
+        d.innerText = 'Estou Aguardando...'*/
+
+    </script>
+</body>
+</html>
