@@ -12,6 +12,7 @@
         }
 
         table {
+            position: relative;
             width: 500px;
             border-collapse: collapse;
         }
@@ -27,6 +28,12 @@
             font-weight: bold;
             padding: 10px;
             background-color: lightgray;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(78, 78, 78);
         }
 
         tbody>tr:nth-child(odd) {
@@ -68,9 +75,11 @@
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <th scope="col">Estados</th>
-            <th scope="col">População</th>
-            <th scope="col" style="width: 90px;">% da População Total</th>
+            <tr>
+                <th scope="col">Estados</th>
+                <th scope="col">População</th>
+                <th scope="col" style="width: 90px;">% da População Total</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
